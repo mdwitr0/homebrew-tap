@@ -5,21 +5,21 @@
 class Spec2llms < Formula
   desc "Generate llms.txt from OpenAPI/Swagger specifications"
   homepage "https://github.com/mdwitr0/spec2llms"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mdwitr0/spec2llms/releases/download/v0.1.0/spec2llms_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1628a3513bf5bb82ab3f4751284e872156a3d04324226d889d7deaa7bfc3da8e"
+      url "https://github.com/mdwitr0/spec2llms/releases/download/v0.2.0/spec2llms_0.2.0_darwin_amd64.tar.gz"
+      sha256 "a0acbce7403b49c7ff6ccf45854f19ff86c7bee9ca002a9c16c7351ffa5570cc"
 
       def install
         bin.install "spec2llms"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mdwitr0/spec2llms/releases/download/v0.1.0/spec2llms_0.1.0_darwin_arm64.tar.gz"
-      sha256 "6e67fe041879427c7a123b426a7aded8888cb4db42cadca782cc6e1085385ab0"
+      url "https://github.com/mdwitr0/spec2llms/releases/download/v0.2.0/spec2llms_0.2.0_darwin_arm64.tar.gz"
+      sha256 "dcd141684b75b8c139d1a94a102559c35262f31fb81e8e07fa236a58620f4d87"
 
       def install
         bin.install "spec2llms"
@@ -29,15 +29,15 @@ class Spec2llms < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mdwitr0/spec2llms/releases/download/v0.1.0/spec2llms_0.1.0_linux_amd64.tar.gz"
-      sha256 "f6449a47a9e50454756877d50d42c7b405ed416d9dddf43f8d9935ba7db6d112"
+      url "https://github.com/mdwitr0/spec2llms/releases/download/v0.2.0/spec2llms_0.2.0_linux_amd64.tar.gz"
+      sha256 "e862961473c9833d65a8b4007b28ac1e7a12ff5423bee4e796543c2654e5ee1d"
       def install
         bin.install "spec2llms"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mdwitr0/spec2llms/releases/download/v0.1.0/spec2llms_0.1.0_linux_arm64.tar.gz"
-      sha256 "1fa9dd3192da4973616fa52ee287d779f0509c774a89968bd48b1cc9c2f7f484"
+      url "https://github.com/mdwitr0/spec2llms/releases/download/v0.2.0/spec2llms_0.2.0_linux_arm64.tar.gz"
+      sha256 "f073abfcce1b2fa3a2f3028820fc857e2f98d6e3dac712359043c61f79d23c4d"
       def install
         bin.install "spec2llms"
       end
